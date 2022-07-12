@@ -1,0 +1,42 @@
+
+<section class="text py-6" >
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="w-1/2"><h6 class="text-lg"><em>Are you hungry</em></h6>
+        <h1 class="text-4xl font-bold">Don<span style="color:red">'t</span> wait <span style="color:red">!</span></h1>
+        <button class="btn btn-primary rounded-full text-white  py-3">Order-Now</button>
+    </div>
+        
+        <div class="w-1/2">
+            <img src="/img/eatpizaa.jpg" alt="pizza" class="rounded-full" style="width:500px;margin-left:60px;">
+        </div>
+    </div>
+</section>
+<section class="menu container mx-auto py-16">
+    <h1 class="text-xl font-bold mb-8">All <span style="color:red">PIZZA</span></h1>
+    <div class="grid grid-cols-4 col-gap-12 row-gap-16">
+       <!-- add dynamic data -->
+       <% pizzas.forEach((pizza)=>{ %>
+
+        <div class="w-64  col-lg-4 col-md-4 col-sm-1">
+            <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image %>"" alt="allpizza"/>
+            <div class="text-center">
+                <h2 class="mb-4 text-lg"><%= pizza.name %></h2>
+                <span class="py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size %></span>
+            </div>
+            <div class="flex items-center justify-around py-4">
+                <span class="font-bold text-lg">₹<%= pizza.price %></span>
+                <button data-pizza="<%= JSON.stringify(pizza) %>"   class="add-to-cart py-1 px-6 rounded-full items-center font-bold" id="addcart" style="background-color:red;"> 
+                    <span>+</span>
+                    <span class="ml-4">Add</span>
+                </button>
+            </div>
+        </div>   
+      <% }) %>
+       
+    </div>
+    
+<script>
+   
+</script>
+</section>
+

@@ -1,0 +1,30 @@
+[
+  {  "_id": {   
+     "$oid": "62909adaa91f8a4a42b90874"  
+     }, 
+      "name": "cheese & popcorn pizza", 
+       "image": "pizza.png", 
+       "price": 300,  
+       "size": "small",  
+       "__v": 0
+   },
+   {  "_id": {   
+      "$oid": "62909adaa91f8a4a42b90875"  
+      }, 
+        "name": "spinach and artichoke pizza",
+        "image": "pizza.png",  
+        "price": 450, 
+        "size": "medium",  
+        "__v": 0
+   },
+   {  "_id": {   
+       "$oid": "62909adaa91f8a4a42b90876" 
+    },  
+     "name": "hut pizza", 
+     "image": "pizza.png", 
+     "price": 350,  
+     "size": "full",   
+     "__v": 0
+   }
+
+] 
